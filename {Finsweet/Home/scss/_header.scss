@@ -1,0 +1,292 @@
+.header {
+  background: #232536;
+
+  .header_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0px 14px 0px;
+
+    .header_items_logo {
+      width: 14%;
+      a {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .header_items_anchor {
+      display: flex;
+      gap: 83px;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        list-style-type: none;
+
+        li {
+          a {
+            color: #fff;
+            font-family: "Inter", sans-serif;
+            text-decoration: none;
+          }
+
+          a:hover {
+            @include hover;
+          }
+        }
+      }
+
+      .header_items_anchor_loginTeg {
+        a {
+          list-style-type: none;
+          text-decoration: none;
+          padding: 16px 48px;
+          color: #232536;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          background: white;
+          font-family: "Sen", sans-serif;
+        }
+
+        a:hover {
+          @include btnHover;
+          color: #ffffff;
+        }
+      }
+    }
+    .icon_burger {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $tabled) {
+  .header {
+    background: #232536;
+
+    .header_items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0px 14px 0px;
+
+      .header_items_logo {
+        width: 14%;
+        a {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .header_items_anchor {
+        display: flex;
+        gap: 73px;
+
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          list-style-type: none;
+
+          li {
+            a {
+              color: #fff;
+              font-family: "Inter", sans-serif;
+              text-decoration: none;
+              font-size: 14px;
+            }
+
+            a:hover {
+              @include hover;
+            }
+             a:focus{
+            color: $yellow;
+          }
+          }
+        }
+
+        .header_items_anchor_loginTeg {
+          a {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 14px 38px;
+            color: #232536;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            background: white;
+            font-family: "Sen", sans-serif;
+          }
+
+          a:hover {
+            @include btnHover;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .icon_burger {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tabledSmall) {
+  .header {
+    background: #232536;
+
+    .header_items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0px 14px 0px;
+
+      .header_items_logo {
+        width: 150px;
+        a {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .header_items_anchor {
+        display: none;
+        gap: 73px;
+
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          list-style-type: none;
+
+          li {
+            a {
+              color: #fff;
+              font-family: "Inter", sans-serif;
+              text-decoration: none;
+              font-size: 14px;
+            }
+
+            a:hover {
+              @include hover;
+            }
+          }
+        }
+
+        .header_items_anchor_loginTeg {
+          a {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 12px 24px;
+            color: #232536;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            background: white;
+            font-family: "Sen", sans-serif;
+          }
+
+          a:hover {
+            @include btnHover;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .icon_burger {
+        display: flex;
+        color: #ffffff;
+        font-size: 30px;
+      }
+
+      .icon_burger:hover {
+        cursor: pointer;
+        color: $yellow;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .header {
+    background: #232536;
+
+    .header_items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0px 14px 0px;
+
+      .header_items_logo {
+        width: 150px;
+        a {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .header_items_anchor {
+        display: none;
+        gap: 73px;
+
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          list-style-type: none;
+
+          li {
+            a {
+              color: #fff;
+              font-family: "Inter", sans-serif;
+              text-decoration: none;
+              font-size: 14px;
+            }
+
+            a:hover {
+              @include hover;
+            }
+          }
+        }
+
+        .header_items_anchor_loginTeg {
+          a {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 12px 24px;
+            color: #232536;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            background: white;
+            font-family: "Sen", sans-serif;
+          }
+
+          a:hover {
+            @include btnHover;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .icon_burger {
+        display: flex;
+        color: #ffffff;
+        font-size: 30px;
+      }
+
+      .icon_burger:hover {
+        cursor: pointer;
+        color: $yellow;
+      }
+    }
+  }
+}

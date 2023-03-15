@@ -1,0 +1,227 @@
+.addForm {
+  position: relative;
+  .adding_modal_bg {
+    width: 100%;
+    position: fixed;
+    top: -1207px;
+    transition: all 1s ease-in-out;
+    padding: 100px 0px 250px 0px;
+    background: radial-gradient(
+      30.56% 76.04% at 74.58% 0%,
+      rgba(0, 0, 0, 0.888) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    .modalCard {
+      width: 500px;
+      background: #dedfe8;
+      box-shadow: rgba(168, 172, 168, 0.25) 0px 50px 100px -20px,
+        rgba(240, 245, 239, 0.3) 0px 30px 60px -30px;
+      border-radius: 10px;
+      margin: 0 auto;
+      .remove_icon {
+        padding: 10px;
+        i {
+          float: right;
+          color: #232536;
+          font-size: 30px;
+          font-weight: 700;
+        }
+
+        i:hover {
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          color: red;
+        }
+      }
+
+      .modalCard_items {
+        margin-top: 45px;
+        .title {
+          h5 {
+            font-family: "Sen";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 64px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: #232536;
+          }
+        }
+        form {
+          .form_items {
+            padding-bottom: 30px;
+            .inputGroup {
+              padding: 0px 30px;
+              label {
+                padding-left: 20px;
+                font-family: " Sen";
+                font-weight: 700;
+                font-size: 20px;
+              }
+              input {
+                padding: 10px 15px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                background: #38383a;
+                border: none;
+                width: 100%;
+                font-size: 20px;
+                color: #ffff;
+
+                box-shadow: rgba(241, 243, 241, 0.25) 0px 50px 100px -20px,
+                  rgba(248, 251, 248, 0.996) 0px 30px 60px -30px;
+              }
+
+              .custom-select {
+                width: 700px;
+                select {
+                  padding: 10px 15px;
+                  margin-bottom: 10px;
+                  border-radius: 10px;
+                  background: #38383a;
+                  border: none;
+                  width: 100%;
+                  font-size: 20px;
+                  color: #ffff;
+
+                  box-shadow: rgba(241, 243, 241, 0.25) 0px 50px 100px -20px,
+                    rgba(248, 251, 248, 0.996) 0px 30px 60px -30px;
+                }
+              }
+            }
+
+            .date {
+              display: flex;
+              gap: 10px;
+            }
+
+            .btn {
+              margin-top: 40px;
+              width: 100%;
+              .sbbtn {
+                margin: 0 auto;
+                padding: 16px 48px;
+                border: none;
+                background: $yellow;
+                font-family: "Sen";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                color: #232536;
+                border-radius: 4px;
+              }
+
+              .sbbtn:hover {
+                cursor: pointer;
+                background: #ffff;
+                color: $yellow;
+                transition: all 0.4s ease-in-out;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .active {
+    top: -4px;
+  }
+
+  .addForm_items {
+    margin: 40px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      h4 {
+        text-align: center;
+        font-family: "Sen";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: -2px;
+        color: #232536;
+      }
+    }
+
+    .add_btn {
+      button {
+        padding: 16px 48px;
+        border: none;
+        background: $yellow;
+        font-family: "Sen";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #232536;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background: #232536;
+        color: $yellow;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tabled) {
+  .title {
+    h4 {
+      font-weight: 700 !important;
+      font-size: 40px !important;
+      line-height: 64px !important;
+      letter-spacing: -2px !important;
+    }
+  }
+  .add_btn {
+    button {
+      padding: 13px 36px !important;
+      font-weight: 700 !important;
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .modalCard {
+    width: 90% !important;
+  }
+
+  .addForm_items {
+    margin: 40px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+    flex-direction: column;
+
+    .title {
+      h4 {
+        font-weight: 700 !important;
+        font-size: 40px !important;
+        line-height: 64px !important;
+        letter-spacing: -2px !important;
+      }
+    }
+    .add_btn {
+      button {
+        padding: 13px 36px !important;
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+      }
+    }
+  }
+}

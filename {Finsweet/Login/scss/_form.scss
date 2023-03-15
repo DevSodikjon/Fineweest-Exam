@@ -1,0 +1,202 @@
+main {
+  .title {
+    margin-top: 69px;
+
+    h3 {
+      font-family: "Oxygen", sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      text-align: center;
+      letter-spacing: -2px;
+      color: #232536;
+    }
+  }
+
+  form {
+    margin: 0 auto;
+    width: 50%;
+
+    .form_items {
+      margin-top: 68px;
+
+      .content_input {
+        margin-bottom: 30px;
+        width: 100%;
+
+        input {
+          width: 100%;
+          padding: 24px 0px 24px 24px;
+          font-size: 20px;
+        }
+      }
+
+      button {
+        margin: 48px 0px 158px;
+        width: 100%;
+        padding: 16px 0px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #232536;
+        background: $yellow;
+        text-align: center;
+        border: 1px solid white;
+      }
+
+      button:hover {
+        background: #232536;
+        border: 1px solid $yellow;
+        cursor: pointer;
+        color: $yellow;
+      }
+    }
+  }
+
+  .burger_menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tabledSmall) {
+  .burger_menu {
+    width: 100%;
+    display: flex !important;
+    position: fixed;
+    top: 70px;
+    right: -310px;
+    transition: all 1s ease;
+
+    nav {
+      position: absolute;
+      right: 0px;
+      padding: 40px 10px 30px 20px;
+      width: 300px;
+      background: $yellow;
+      ul {
+        list-style-type: none;
+        margin-bottom: 187px;
+        li {
+          margin-bottom: 60px;
+          a {
+            color: #232536;
+            font-family: "Inter", sans-serif;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 33px;
+            line-height: 28px;
+          }
+
+          a:hover {
+            @include hover;
+            text-decoration: underline;
+            transition: all 0.3s ease-in-out;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .header_items_anchor_loginTeg_burger {
+        margin-bottom: 60px;
+        a {
+          list-style-type: none;
+          text-decoration: none;
+          padding: 20px 54px;
+          color: #232536;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          background: white;
+          font-family: "Sen", sans-serif;
+        }
+
+        a:hover {
+          // @include btnHover;
+          background: #232536;
+          transition: all 0.3s ease-in-out;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .active {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: $phone) {
+  form {
+    width: 80% !important;
+    input {
+      width: 100% !important;
+      padding: 16px 0px 16px 16px !important;
+      font-size: 20px !important;
+    }
+  }
+
+  .burger_menu {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 70px;
+    right: -310px;
+    transition: all 1s ease;
+
+    nav {
+      position: absolute;
+      right: 0px;
+      padding: 40px 10px 30px 20px;
+      width: 300px;
+      background: $yellow;
+      ul {
+        list-style-type: none;
+        margin-bottom: 187px;
+        li {
+          margin-bottom: 60px;
+          a {
+            color: #232536;
+            font-family: "Inter", sans-serif;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 33px;
+            line-height: 28px;
+          }
+
+          a:hover {
+            @include hover;
+            text-decoration: underline;
+            transition: all 0.3s ease-in-out;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .header_items_anchor_loginTeg_burger {
+        margin-bottom: 60px;
+        a {
+          list-style-type: none;
+          text-decoration: none;
+          padding: 20px 54px;
+          color: #232536;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          background: white;
+          font-family: "Sen", sans-serif;
+        }
+
+        a:hover {
+          // @include btnHover;
+          background: #232536;
+          transition: all 0.3s ease-in-out;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .active {
+    right: 20px;
+  }
+}

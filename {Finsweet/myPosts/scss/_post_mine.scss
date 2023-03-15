@@ -1,0 +1,388 @@
+.myPosts {
+  &_items {
+    &_card {
+      &_img {
+        margin: 56px 0px 68px 0px;
+        img {
+          width: 100%;
+        }
+      }
+
+      &_content {
+        padding: 0px 276px 104px 216px;
+        .myPosts_items_card_content_userInfo {
+          margin-bottom: 24px;
+          .userInfo_items {
+            display: flex;
+            align-items: center;
+            gap: 17.25px;
+            .user_img {
+              width: 53px;
+              height: 53px;
+              border-radius: 50%;
+
+              img {
+                width: 100%;
+                border-radius: 50%;
+              }
+            }
+
+            .user_nameAndDate {
+              .name {
+                p {
+                  font-family: "Sen";
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 28px;
+                  line-height: 40px;
+                  letter-spacing: -1px;
+                  color: #592ea9;
+                }
+              }
+
+              .date {
+                p {
+                  font-family: "Inter";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 28px;
+                  color: #6d6e76;
+                }
+              }
+            }
+          }
+        }
+
+        &_title {
+          margin-bottom: 62px;
+          h3 {
+            margin-bottom: 34px;
+            font-family: "Sen";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: -2px;
+          }
+
+          p {
+            font-family: "Sen";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: #232536;
+            span {
+              a {
+                text-decoration: none;
+                color: #232536;
+              }
+
+              a:hover {
+                color: $yellow;
+              }
+            }
+          }
+        }
+
+        &_desc {
+          p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #6d6e76;
+            margin-bottom: 24px;
+          }
+        }
+      }
+
+      .add_btn {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 40px;
+        button {
+          padding: 16px 48px;
+          border: none;
+          background: $yellow;
+          font-family: "Sen";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          color: #232536;
+          border-radius: 4px;
+        }
+
+        button:hover {
+          cursor: pointer;
+          background: #232536;
+          color: $yellow;
+          transition: all 0.4s ease-in-out;
+        }
+
+        .delete {
+          background: red;
+          color: $yellow;
+        }
+      }
+    }
+  }
+
+  .burger_menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tabled) {
+  .myPosts {
+    &_items {
+      &_card {
+        &_img {
+          margin: 56px 0px 68px 0px;
+          img {
+            width: 100%;
+          }
+        }
+
+        &_content {
+          padding: 0px 210px 104px 155px;
+          .myPosts_items_card_content_userInfo {
+            margin-bottom: 24px;
+            .userInfo_items {
+              display: flex;
+              align-items: center;
+              gap: 17.25px;
+              .user_img {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+
+                img {
+                  width: 100%;
+                }
+              }
+
+              .user_nameAndDate {
+                .name {
+                  p {
+                    font-size: 23px;
+                    line-height: 33px;
+                  }
+                }
+
+                .date {
+                  p {
+                    font-size: 14px;
+                    line-height: 14px;
+                  }
+                }
+              }
+            }
+          }
+
+          &_title {
+            margin-bottom: 62px;
+            h3 {
+              font-size: 35px;
+              line-height: 42px;
+            }
+
+            p {
+              font-family: "Sen";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 0px;
+              color: #232536;
+              span {
+                a {
+                  text-decoration: none;
+                  color: #232536;
+                }
+              }
+            }
+          }
+
+          &_desc {
+            p {
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              color: #6d6e76;
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .burger_menu {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $tabledSmall) {
+  .myPosts {
+    &_items {
+      &_card {
+        &_img {
+          margin: 56px 0px 68px 0px;
+          img {
+            width: 100%;
+          }
+        }
+
+        &_content {
+          padding: 0px 113px 104px 113px;
+          .myPosts_items_card_content_userInfo {
+            margin-bottom: 24px;
+            .userInfo_items {
+              display: flex;
+              align-items: center;
+              gap: 17.25px;
+              .user_img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+
+                img {
+                  width: 100%;
+                }
+              }
+
+              .user_nameAndDate {
+                .name {
+                  p {
+                    font-size: 18px;
+                    line-height: 26px;
+                  }
+                }
+
+                .date {
+                  p {
+                    font-size: 10px;
+                    line-height: 13px;
+                  }
+                }
+              }
+            }
+          }
+
+          &_title {
+            margin-bottom: 62px;
+            h3 {
+              font-size: 28px;
+              line-height: 31px;
+            }
+
+            p {
+              font-size: 14px;
+              line-height: 0px;
+              span {
+                a {
+                  text-decoration: none;
+                  color: #232536;
+                }
+              }
+            }
+          }
+
+          &_desc {
+            p {
+              font-size: 13px;
+              line-height: 17px;
+            }
+          }
+        }
+      }
+    }
+
+    .burger_menu {
+      width: 100%;
+      display: flex;
+      position: fixed;
+      top: 70px;
+      right: -310px;
+      transition: all 1s ease;
+
+      nav {
+        position: absolute;
+        right: 0px;
+        padding: 40px 10px 30px 20px;
+        width: 300px;
+        background: $yellow;
+        ul {
+          list-style-type: none;
+          margin-bottom: 187px;
+          li {
+            margin-bottom: 60px;
+            a {
+              color: #232536;
+              font-family: "Inter", sans-serif;
+              text-decoration: none;
+              font-weight: 700;
+              font-size: 33px;
+              line-height: 28px;
+            }
+
+            a:hover {
+              @include hover;
+              text-decoration: underline;
+              transition: all 0.3s ease-in-out;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .header_items_anchor_loginTeg_burger {
+          margin-bottom: 60px;
+          a {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 20px 54px;
+            color: #232536;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            background: white;
+            font-family: "Sen", sans-serif;
+          }
+
+          a:hover {
+            // @include btnHover;
+            background: #232536;
+            transition: all 0.3s ease-in-out;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .active {
+      right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .myPosts_items_card_content_userInfo {
+    .userInfo_items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .myPosts_items_card_content {
+    padding: 0px 70px 104px 70px;
+    text-align: center;
+  }
+}

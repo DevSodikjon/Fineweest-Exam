@@ -1,0 +1,11 @@
+@mixin hover {
+  color: $yellow;
+  transition: 0.3s ease-in-out;
+}
+
+@mixin btnHover {
+  background: $yellow;
+  transition: 0.3s ease-in-out;
+}
+
+

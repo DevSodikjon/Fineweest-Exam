@@ -1,0 +1,45 @@
+// Sen
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+//   font-family: "Sen", sans-serif;
+
+// Inter
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+// font-family: 'Inter', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1370px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: $tabled) {
+  .container {
+    max-width: 992px;
+    padding: 0px 15px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: $tabledSmall) {
+  .container {
+    max-width: 660px;
+    padding: 0px 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .container {
+    max-width: 576px;
+    padding: 0px 20px;
+    margin: 0 auto;
+  }
+}

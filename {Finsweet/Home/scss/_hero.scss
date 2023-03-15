@@ -1,0 +1,534 @@
+.hero {
+  background-image: url("/{Finsweet/img/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &_bg {
+    background: radial-gradient(
+      30.56% 76.04% at 74.58% 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+
+    .hero_items {
+      &_content {
+        width: 60%;
+        padding: 128px 0px 0px 0px;
+        .post {
+          padding-bottom: 24px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          color: #ffffff;
+
+          span {
+            font-weight: 100 !important;
+          }
+        }
+
+        h2 {
+          margin-bottom: 24px;
+          font-family: "Sen";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 56px;
+          line-height: 64px;
+          letter-spacing: -2px;
+          color: #ffffff;
+        }
+
+        .data {
+          margin-bottom: 16px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          margin-bottom: 16px;
+          color: #ffffff;
+
+          span {
+            color: $yellow;
+          }
+        }
+
+        .desc {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          margin-bottom: 48px;
+          color: #ffffff;
+        }
+
+        .btnGroup {
+          padding-bottom: 192px;
+          a {
+            padding: 16px 48px;
+            background: $yellow;
+            font-family: "Sen";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            color: #232536;
+            border: none;
+          }
+
+          a:hover {
+            background: #ffffff;
+            transition: all 0.3s ease-in-out;
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+
+  .burger_menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tabled) {
+  .hero {
+    background-image: url("/{Finsweet/img/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_bg {
+      background: radial-gradient(
+        30.56% 76.04% at 74.58% 0%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+    }
+
+    &_items {
+      &_content {
+        width: 60%;
+        padding: 128px 0px 0px 0px;
+        .post {
+          padding-bottom: 24px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          color: #fff;
+
+          span {
+            font-weight: 100 !important;
+          }
+        }
+
+        h2 {
+          margin-bottom: 24px;
+          font-family: "Sen";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 60px;
+          letter-spacing: -2px;
+          color: #ffffff;
+        }
+
+        .data {
+          margin-bottom: 16px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          margin-bottom: 16px;
+          color: #ffffff;
+
+          span {
+            color: $yellow;
+          }
+        }
+
+        .desc {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          margin-bottom: 48px;
+          color: #ffffff;
+        }
+
+        .btnGroup {
+          padding-bottom: 192px;
+          display: flex;
+          align-items: center;
+          a {
+            text-decoration: none;
+            padding: 14px 38px;
+            background: $yellow;
+            font-family: "Sen";
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            color: #232536;
+            border: none;
+          }
+
+          a:hover {
+            background: #ffffff;
+            transition: all 0.3s ease-in-out;
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tabledSmall) {
+  .hero {
+    background-image: url("/{Finsweet/img/hero.png");
+    background-size: 250% 100% !important;
+    background-position: -185px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &_bg {
+      background: radial-gradient(
+        30.56% 76.04% at 74.58% 0%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+    }
+
+    &_items {
+      &_content {
+        width: 100% !important;
+        padding: 90px 10px 0px 10px;
+        .post {
+          padding-bottom: 24px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          color: #fff;
+          // color: #30f;
+
+          span {
+            font-weight: 100 !important;
+          }
+        }
+
+        h2 {
+          margin-bottom: 24px;
+          font-family: "Sen";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 45px;
+          letter-spacing: -2px;
+          color: #ffffff;
+        }
+
+        .data {
+          margin-bottom: 16px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 28px;
+          margin-bottom: 16px;
+          color: #ffffff;
+
+          span {
+            color: $yellow;
+          }
+        }
+
+        .desc {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 48px;
+          color: #ffffff;
+
+          br {
+            display: none;
+          }
+        }
+
+        .btnGroup {
+          padding-bottom: 204px;
+          display: flex;
+          align-items: center;
+          a {
+            text-decoration: none;
+            padding: 14px 38px;
+            background: $yellow;
+            font-family: "Sen";
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            color: #232536;
+            border: none;
+          }
+
+          a:hover {
+            background: #ffffff;
+            transition: all 0.3s ease-in-out;
+            color: $yellow;
+          }
+        }
+      }
+    }
+
+    .burger_menu {
+      width: 100%;
+      display: flex;
+      position: fixed;
+      top: 70px;
+      right: -310px;
+      transition: all 1s ease;
+
+      nav {
+        position: absolute;
+        right: 0px;
+        padding: 40px 10px 30px 20px;
+        width: 300px;
+        background: $yellow;
+        ul {
+          list-style-type: none;
+          margin-bottom: 187px;
+          li {
+            margin-bottom: 60px;
+            a {
+              color: #232536;
+              font-family: "Inter", sans-serif;
+              text-decoration: none;
+              font-weight: 700;
+              font-size: 33px;
+              line-height: 28px;
+            }
+
+            a:hover {
+              @include hover;
+              text-decoration: underline;
+              transition: all 0.3s ease-in-out;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .header_items_anchor_loginTeg_burger {
+          margin-bottom: 60px;
+          a {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 20px 54px;
+            color: #232536;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            background: white;
+            font-family: "Sen", sans-serif;
+          }
+
+          a:hover {
+            // @include btnHover;
+            background: #232536;
+            transition: all 0.3s ease-in-out;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .active {
+      right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $phone) {
+  .hero {
+    background-image: url("/{Finsweet/img/hero.png");
+    background-size: 405% 100% !important;
+    background-position: -318px !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &_bg {
+      background: radial-gradient(
+        30.56% 76.04% at 74.58% 0%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+    }
+
+    &_items {
+      &_content {
+        text-align: center;
+        width: 100% !important;
+        padding: 60px 10px 0px 10px !important;
+        .post {
+          padding-bottom: 18px !important;
+          font-family: "Inter" !important;
+          font-style: normal !important;
+          font-weight: 700 !important;
+          font-size: 13px !important;
+          line-height: 20px !important;
+          letter-spacing: 3px !important;
+          text-transform: uppercase !important;
+          color: #fff !important;
+
+          span {
+            font-weight: 100 !important;
+          }
+        }
+
+        h2 {
+          margin-bottom: 24px !important;
+          font-family: "Sen" !important;
+          font-style: normal !important;
+          font-weight: 700 !important;
+          font-size: 40px !important;
+          line-height: 45px !important;
+          letter-spacing: -2px !important;
+          color: #ffffff;
+        }
+
+        .data {
+          margin-bottom: 16px !important;
+          font-family: "Inter" !important;
+          font-style: normal !important;
+          font-weight: 400 !important;
+          font-size: 13px !important;
+          line-height: 28px !important;
+          margin-bottom: 16px !important;
+          color: #ffffff !important;
+
+          span {
+            color: $yellow;
+          }
+        }
+
+        .desc {
+          font-family: "Inter" !important;
+          font-style: normal !important;
+          font-weight: 400 !important;
+          font-size: 14px !important;
+          line-height: 20px !important;
+          margin-bottom: 58px !important;
+          color: #ffffff !important;
+
+          br {
+            display: none;
+          }
+        }
+
+        .btnGroup {
+          padding-bottom: 204px !important;
+          display: flex !important;
+          align-items: center !important;
+          a {
+            margin: 0 auto;
+            padding: 12px 28px !important;
+            text-decoration: none !important;
+            background: $yellow !important;
+            font-family: "Sen" !important;
+            font-weight: 700 !important;
+            font-size: 18px !important;
+            line-height: 24px !important;
+            color: #232536 !important;
+            border: none !important;
+          }
+
+          a:hover {
+            background: #ffffff !important;
+            transition: all 0.3s ease-in-out !important;
+            color: $yellow !important;
+          }
+        }
+      }
+    }
+
+    .burger_menu {
+      width: 100%;
+      display: flex;
+      position: fixed;
+      top: 70px;
+      right: -310px;
+      transition: all 1s ease;
+
+      nav {
+        position: absolute;
+        right: 0px;
+        padding: 40px 10px 30px 20px;
+        width: 300px;
+        background: $yellow;
+        ul {
+          list-style-type: none;
+          margin-bottom: 187px;
+          li {
+            margin-bottom: 60px;
+            a {
+              color: #232536;
+              font-family: "Inter", sans-serif;
+              text-decoration: none;
+              font-weight: 700;
+              font-size: 33px;
+              line-height: 28px;
+            }
+
+            a:hover {
+              @include hover;
+              text-decoration: underline;
+              transition: all 0.3s ease-in-out;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .header_items_anchor_loginTeg_burger {
+          margin-bottom: 60px;
+          a {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 20px 54px;
+            color: #232536;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            background: white;
+            font-family: "Sen", sans-serif;
+          }
+
+          a:hover {
+            // @include btnHover;
+            background: #232536;
+            transition: all 0.3s ease-in-out;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .active {
+      right: 20px;
+    }
+  }
+}
