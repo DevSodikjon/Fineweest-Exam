@@ -1,8 +1,8 @@
 let cardGroup = document.querySelector(".cardGroup");
 
 // const api = "https://newsapi.org/v2/everything?q=bitcoin&";
-const api = "https://newsapi.org/v2/everything?q=news";
-const apiKEY = "2b2a32aa50434d9aa959591da8ea5896";
+const api = `https://newsapi.org/v2/everything?q=business`;
+const apiKEY = "1197b66f6fa5469d9710a899de02c5e5";
 
 async function gettingNews() {
   const apiAndKey = `${api}&apiKey=${apiKEY}`;

@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("/{Finsweet/img/hero.png");
+  background-image: url("/img/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -69,6 +69,7 @@
         .btnGroup {
           padding-bottom: 192px;
           a {
+            text-decoration: none;
             padding: 16px 48px;
             background: $yellow;
             font-family: "Sen";

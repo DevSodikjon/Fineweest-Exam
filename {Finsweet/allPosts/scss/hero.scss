@@ -97,7 +97,7 @@
 @media screen and (max-width: $tabled) {
   .posts {
     background: #f4f0f8;
-    border: 2px solid rgb(10, 145, 28);
+
     &_items {
       display: flex;
       align-items: center;
@@ -257,7 +257,7 @@
 @media screen and (max-width: $tabledSmall) {
   .posts {
     background: #f4f0f8;
-    border: 2px solid rgb(10, 145, 28);
+
     &_items {
       display: flex;
       align-items: center;
@@ -417,12 +417,12 @@
 @media screen and (max-width: $phone) {
   .posts {
     background: #f4f0f8;
-    border: 2px solid rgb(10, 145, 28);
+
     &_items {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      flex-direction: column;
 
       &_content {
         width: 100%;

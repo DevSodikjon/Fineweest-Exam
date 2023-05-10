@@ -1,21 +1,28 @@
 // const api = "https://newsapi.org/v2/everything?q=bitcoin&";
 
-const api = `https://newsapi.org/v2/everything?q=business`;
+// const api = `https://newsapi.org/v2/everything?q=business`;
+// const apiKEY = "1197b66f6fa5469d9710a899de02c5e5";
 
-const apiKEY = "2b2a32aa50434d9aa959591da8ea5896";
+const form_search = document.querySelector(".form_search");
 
 let tags_items_cardBranchs = document.querySelector(".tags_items_cardBranchs");
-let not_found = document.querySelector("not_found");
 
-const apiAndKey = `${api}&apiKey=${apiKEY}`;
+let apiAndKey;
 
 async function gettingNews() {
+  const inputSearch = document.querySelector(".inputSearch").value;
+
+  if (inputSearch) {
+    apiAndKey = `https://newsapi.org/v2/everything?q=${inputSearch}&apiKey=1197b66f6fa5469d9710a899de02c5e5`;
+  } else {
+    apiAndKey = `https://newsapi.org/v2/everything?q=business&apiKey=1197b66f6fa5469d9710a899de02c5e5`;
+  }
+
   try {
     const res = await fetch(apiAndKey);
     const data = await res.json();
 
     data.articles.map((newss) => {
-      // console.log(newss.content);
       let businessSection = newss.title == "Business";
       if (businessSection) {
         tags_items_cardBranchs.innerHTML += `
@@ -54,30 +61,14 @@ async function gettingNews() {
 
 gettingNews();
 
-const searchBtn = document.querySelector(".searchBtn");
+const inputSearch = document.querySelector(".inputSearch");
 
-// async function searchNews() {
-//   try {
-//     const res = await fetch(apiAndKey);
-//     const data = await res.json();
+inputSearch.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    gettingNews(inputSearch.value);
+    console.log(inputSearch.value);
 
-//     const form_search = document.querySelector(".form_search");
-
-//     form_search.addEventListener("submit", (e) => {
-//       e.preventDefault();
-//       const inputSearchBtn = document.querySelector(".inputSearch").value;
-//       data.articles.map((news) => {
-//         if (news.content == inputSearchBtn) {
-//           console.log(news.content);
-//         } else {
-//           console.log(news);
-//         }
-//       });
-//       console.log(inputSearchBtn);
-//     });
-//   } catch (error) {
-//     console.error(error);
-//   }
-// }
-
-// searchNews();
+    inputSearch.value = "";
+  }
+});

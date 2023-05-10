@@ -26,7 +26,7 @@
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 450px) {
   .container {
     max-width: 576px;
     padding: 0px 20px;
@@ -205,7 +205,7 @@
     color: #ffd050;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 450px) {
   .header {
     background: #232536;
   }
@@ -356,7 +356,6 @@
 @media screen and (max-width: 992px) {
   .posts {
     background: #f4f0f8;
-    border: 2px solid rgb(10, 145, 28);
   }
   .posts_items {
     display: flex;
@@ -501,7 +500,6 @@
 @media screen and (max-width: 658px) {
   .posts {
     background: #f4f0f8;
-    border: 2px solid rgb(10, 145, 28);
   }
   .posts_items {
     display: flex;
@@ -643,16 +641,15 @@
     right: 20px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 450px) {
   .posts {
     background: #f4f0f8;
-    border: 2px solid rgb(10, 145, 28);
   }
   .posts_items {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
   }
   .posts_items_content {
     width: 100%;
@@ -1022,6 +1019,122 @@
     justify-content: space-between;
     margin-bottom: 91px;
   }
+  .tags_items .tags_items_diraction .tags_items_cardBranchs {
+    padding: 0px 10px;
+  }
+  .tags_items .tags_items_diraction .tags_items_cardBranchs .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  .tags_items .tags_items_diraction .tags_items_cardBranchs .card .card_img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .tags_items .tags_items_diraction .tags_items_cardBranchs .card .card_img img {
+    width: 100%;
+  }
+  .tags_items .tags_items_diraction .tags_items_cardBranchs .card_contents .card_data {
+    margin-bottom: 20px;
+  }
+  .tags_items .tags_items_diraction .tags_items_cardBranchs .card_contents .card_data p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #592ea9;
+  }
+  .tags_items .tags_items_diraction .tags_items_cardBranchs .card_contents .card_title {
+    margin-bottom: 16px;
+  }
+  .tags_items .tags_items_diraction .tags_items_cardBranchs .card_contents .card_title h4 {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    color: #232536;
+  }
+  .tags_items .tags_items_diraction .tags_items_cardBranchs .card_contents .card_description p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6d6e76;
+  }
+  .tags_items nav {
+    margin-bottom: 106px;
+  }
+  .tags_items nav ul {
+    margin: 0 auto;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 12px;
+  }
+  .tags_items nav ul li {
+    border: 2px solid #ffd050;
+  }
+  .tags_items nav ul li a {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .tags_items nav ul li a:hover {
+    background-color: #592ea9;
+  }
+  .tags_items .nav_button:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+}
+@media screen and (max-width: 450px) {
+  .tags_items .form_search {
+    padding: 57px 0px 57px 0px;
+  }
+  .tags_items .form_search_item input {
+    width: 100%;
+    padding: 24px 0px 24px 24px;
+  }
+  .tags_items .title {
+    text-align: center;
+  }
+  .tags_items .title p {
+    margin: 0px 50px 32px 0px;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: #232536;
+  }
+  .tags_items .title hr {
+    margin-bottom: 64px;
+  }
+  .tags_items .tags_items_diraction {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 91px;
+  }
+  .tags_items .tags_items_diraction .tags_items_cardBranchs {
+    width: 100%;
+    padding: 0px 10px;
+  }
   .tags_items .tags_items_diraction .tags_items_cardBranchs .card {
     width: 100%;
     display: flex;
@@ -1144,7 +1257,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 450px) {
   .footer {
     background-color: #232536;
   }

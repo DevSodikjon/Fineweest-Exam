@@ -11,9 +11,13 @@ form_login.addEventListener("submit", (e) => {
 
   const values = [username_login.value, password_login.value];
 
-  if (values) {
-    localStorage.setItem("key", values);
+  console.log(values);
 
+  const user = localStorage.getItem("key");
+
+  console.log(user);
+
+  if (values == user) {
     window.location.href = "./myPosts.html";
 
     (firstName.value = ""),
@@ -21,5 +25,9 @@ form_login.addEventListener("submit", (e) => {
       (username_login.value = ""),
       (password_login.value = ""),
       (confiremPassword.value = "");
+  } else {
+    alert("Please Register first !");
+
+    window.location.href = "./Register.html";
   }
 });

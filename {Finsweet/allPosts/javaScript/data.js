@@ -1,5 +1,5 @@
 const api = `https://newsapi.org/v2/everything?q=business`;
-const apiKEY = "2b2a32aa50434d9aa959591da8ea5896";
+const apiKEY = "1197b66f6fa5469d9710a899de02c5e5";
 // const apiAndKey = `${api}&apiKey=${apiKEY}`;
 
 let tags_items_cardBranchs = document.querySelector(".tags_items_cardBranchs");
@@ -47,21 +47,19 @@ let tags_items_cardBranchs = document.querySelector(".tags_items_cardBranchs");
 
 // gettingNews();
 
-async function searchFunc() {
-  const searchId = document.querySelector("#searchId").value;
-  let ss = "tesla";
-  // console.log(ss);
+async function searchFunc(val) {
+  tags_items_cardBranchs.innerHTML = "";
   let url;
-  if (searchId) {
-    url = `https://newsapi.org/v2/everything?q=${searchId}&apiKey=2b2a32aa50434d9aa959591da8ea5896`;
-    console.log(searchId);
+  if (val) {
+    url = `https://newsapi.org/v2/everything?q=${val}&apiKey=1197b66f6fa5469d9710a899de02c5e5`;
   } else {
-    url = `https://newsapi.org/v2/everything?q=keyword&apiKey=2b2a32aa50434d9aa959591da8ea5896`;
+    url = `https://newsapi.org/v2/everything?q=${"keyword"}&apiKey=1197b66f6fa5469d9710a899de02c5e5`;
   }
 
   try {
     const res = await fetch(url);
     const data = await res.json();
+    console.log(data);
 
     data.articles.map((newss) => {
       tags_items_cardBranchs.innerHTML += `
@@ -89,7 +87,7 @@ async function searchFunc() {
         `;
     });
   } catch (error) {
-    console.error(error);
+    console.error("error", error);
   }
 }
 
@@ -99,16 +97,52 @@ const searchId = document.getElementById("searchId");
 
 searchId.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
-    searchFunc();
+    e.preventDefault();
+    searchFunc(SearchInput.value);
     console.log(SearchInput.value);
     SearchInput.value = "";
   }
 });
 
-// form_search.addEventListener("submit", (e) => {
-//   // e.preventDefault();
-//   searchFunc();
-//   SearchInput.value = "";
-// });
-
 searchFunc();
+
+const posts_items = document.querySelector(".posts_items");
+
+async function gettingNews() {
+  const apiAndKey = `${api}&apiKey=${apiKEY}`;
+
+  try {
+    const res = await fetch(apiAndKey);
+    const data = await res.json();
+    console.log(data);
+    const partOfData = data.articles.slice(0, 1);
+
+    console.log(partOfData);
+    partOfData.map((newss) => {
+      posts_items.innerHTML = `
+      
+              <div class="posts_items_content">
+              <p class="feature">Featured Post</p>
+              <p class="title">
+                ${newss.title}
+              </p>
+              <p class="data">By <span>${newss.author}</span> | ${newss.publishedAt}</p>
+              <p class="desc">
+                ${newss.content}
+              </p>
+              <button>
+                <a href="#"> Read More <i class="ri-arrow-right-s-line"></i></a>
+              </button>
+            </div>
+            <div class="posts_items_img">
+              <img src="${newss.urlToImage}" alt="post" />
+            </div>
+
+      `;
+    });
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+gettingNews();
